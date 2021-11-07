@@ -1,0 +1,158 @@
+.App {
+  height: 100vh;
+  overflow: scroll;
+  text-align: center;
+}
+
+.container {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px 0 30px;
+  margin: 2em;
+  background-color: #1a202c;
+  color: white;
+  border-radius: 14px;
+}
+
+.authed-container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+  margin: 2em;
+  background-color: #1a202c;
+  color: white;
+  border-radius: 14px;
+}
+
+.header {
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.sub-text {
+  font-size: 25px;
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(left, #60c657 30%, #35aee2 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta-button {
+  height: 45px;
+  border: 0;
+  width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.connect-wallet-button {
+  background: -webkit-linear-gradient(left, #60c657, #35aee2);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+}
+
+.submit-gif-button {
+  background: -webkit-linear-gradient(left, #4e44ce, #35aee2);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  margin-left: 10px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin: 1em;
+}
+
+.lava-icon {
+  width: 100px;
+  height: 100px;
+  margin: 1em 0;
+}
+
+.twitter-logo {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.gif-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.gif-grid .gif-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* justify-self: center; */
+  /* align-self: center; */
+  align-items: center;
+  margin: 1em;
+}
+
+.gif-item .user-address {
+  /* transform: rotate(90deg);
+  transform-origin: right top 0;
+  float: right; */
+  font-size: 11px;
+  font-family: monospace;
+  word-wrap: break-word;
+  max-width: 50%;
+  padding: 0.5em 0;
+}
+
+.gif-item img {
+  width: 30%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: full;
+}
+
+.connected-container input[type='text'] {
+  display: inline-block;
+  padding: 10px;
+  width: 50%;
+  height: 60px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 10px;
+  margin: 50px auto;
+}
+
+.connected-container button {
+  height: 50px;
+}
+
+input {
+  color: white;
+}
